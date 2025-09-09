@@ -1,7 +1,7 @@
 from machine import Pin, time_pulse_us
 import time
 
-print("CORINTHIANS!")
+print("Hello word!")
 
 PINO_TRIG = 25
 PINO_ECHO = 27
