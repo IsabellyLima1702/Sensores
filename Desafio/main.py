@@ -1,7 +1,7 @@
 from machine import Pin, time_pulse_us
 import time
 
-print("Hello world!")
+print("CORINTHIANS!")
 
 PINO_TRIG = 25
 PINO_ECHO = 27
@@ -9,7 +9,7 @@ PINO_LED_INTRUSO = 26
 
 trig = Pin(PINO_TRIG, Pin.OUT)
 echo = Pin(PINO_ECHO, Pin.IN)
-led_intruder = Pin(PINO_LED_INTRUSO, Pin.OUT)
+led_more = Pin(PINO_LED_INTRUSO, Pin.OUT)
 
 def obter_distancia():
    
@@ -32,11 +32,11 @@ for contador in range(12):
 
     if contador > 10:
         print("Nova Caixa!")
-        led_intruder.value(1)
+        led_more.value(1)
         time.sleep(1)
     else:
         print("Objetos passados:", contador)
-        led_intruder.value(0)
+        led_more.value(0)
 
     time.sleep(3)
     contador += 1
